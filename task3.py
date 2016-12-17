@@ -42,3 +42,18 @@ def PrintMatrix(matrix: list):
         for item in row:
             print(item, end=' ')
         print()
+
+        
+rows = int(input('Rows: '))
+cols = int(input('Columns: '))
+print("Matrix 1: ")
+matrix1 = GetMatrix(rows, cols)
+PrintMatrix(matrix1)
+print("Matrix 2: ")
+matrix2 = GetMatrix(rows, cols)
+PrintMatrix(matrix2)
+print("Matrix 1 + Matrix 2: ")
+PrintMatrix(sumMatrix(matrix1, matrix2))
+print()
+print("Matrix 1 * Matrix 2: ")
+PrintMatrix(mulMatrix(matrix1, matrix2))
