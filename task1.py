@@ -12,3 +12,10 @@ def getMinItem(mas: list) -> int:
         if x < min:
             min = x
     return min
+
+smas = input("Enter values: ").split(' ')
+mas = []
+for x in smas:
+    mas.append(int(x))
+print('Max: {0}'.format(getMaxItem(mas)))
+print('Min: {0}'.format(getMinItem(mas)))
