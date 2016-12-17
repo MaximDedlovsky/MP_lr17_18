@@ -10,4 +10,6 @@ for word in words:
         dictionary[word] += 1
     else:
         dictionary[word] = 1
-print(dictionary)
+
+for pair in dictionary:
+    print('{0}: {1}'.format(pair, dictionary[pair]))
